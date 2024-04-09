@@ -1,0 +1,145 @@
+:root {
+    --background-color: rgb(170, 156, 170);
+    --font-color: rgb(145, 29, 145);
+    --header-bg-color: deepskyblue;
+    --header-font-color: darkblue;
+    --field-bg-color: rgb(142, 211, 207);
+    --field-hover: rgb(24, 158, 151);
+    --border-color: pink;
+    --pink-border-color: #5f1c43;
+    --button-bg-color: rgb(177, 159, 162);
+    --button-hover-bg: rgb(223, 172, 233);
+    --button-active-bg: rgb(221, 45, 142);
+    --font: 'Roboto', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--font);
+
+    line-height: 1.6;
+    margin-bottom: 80px;
+
+}
+
+h1 {
+    line-height: 1.2;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 3px solid var(--pink-border-color);
+    background-color: var(--header-bg-color);
+    color: var(--header-font-color);
+
+}
+
+.title {
+    font-size: 100px;
+    text-align: center;
+}
+
+.main {
+    padding: 0 20px;
+}
+
+.message {
+    padding: 20px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 454px;
+    width: 454px;
+    border: 2px solid var(--border-color);
+    margin: 0px auto;
+    border-radius: 5px;
+}
+
+.field {
+    height: 150px;
+    width: 150px;
+    border: 1px solid var(--border-color);
+    background-color: var(--field-bg-color);
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.field:hover {
+    background-color: var(--field-hover)
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    border: 2px solid var(--pink-border-color);
+    border-radius: 17px;
+    background-color: var(--button-bg-color);
+    color: rgb(75, 3, 25);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.reset-button:hover {
+    background-color: var(--button-hover-bg);
+
+}
+
+.reset-button:active {
+    background-color: var(--button-active-bg);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.footer a {
+    color: maroon;
+    text-decoration: none;
+    font-weight: 700;
+}
